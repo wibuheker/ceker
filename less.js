@@ -19,7 +19,7 @@ const LessSecure = async () => {
     const [user, pass] = Empass[Counter].split('|', 2);
     const Browser = await Pupet.launch({
         args: ['--no-sandbox'],
-        headless: false
+        headless: true
     });
     const Page = await Browser.newPage()
     await Page.goto('https://stackoverflow.com/users/signup?ssrc=head&returnurl=%2fusers%2fstory%2fcurrent', { waitUntil: 'networkidle0'})
