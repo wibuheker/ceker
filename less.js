@@ -1,6 +1,8 @@
 /**
  * @LessSecure | WibuHeker
  * Powered By XaiSyndicate.id
+ * npm install puppeteer colors fs
+ * node file.js LIST.txt
  */
 const Pupet = require('puppeteer');
 const Colors = require('colors');
